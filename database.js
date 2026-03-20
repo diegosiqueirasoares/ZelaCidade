@@ -102,5 +102,9 @@ const criarBanco = async () => {
     console.log('------ RELATÓRIO FINAL ------')
     const resultadoFinal = await db.all(`SELECT * FROM incidentes`)
     console.log(resultadoFinal)
+
+return db; 
 }
-criarBanco()
+
+
+module.exports = { criarBanco }
